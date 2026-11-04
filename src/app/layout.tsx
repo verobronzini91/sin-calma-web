@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { site } from "@/content/site";
 import { hand, sans, serif } from "@/lib/fonts";
 import { organizationJsonLd, websiteJsonLd } from "@/lib/jsonld";
+import { defaultSocialImage } from "@/lib/metadata";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,11 +23,13 @@ export const metadata: Metadata = {
     url: "/",
     title: site.title,
     description: site.description,
+    images: [defaultSocialImage],
   },
   twitter: {
     card: "summary_large_image",
     title: site.title,
     description: site.description,
+    images: [defaultSocialImage],
   },
   robots: { index: true, follow: true },
   formatDetection: { telephone: false, email: false, address: false },
