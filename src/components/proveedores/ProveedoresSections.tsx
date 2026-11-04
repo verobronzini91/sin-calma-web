@@ -185,7 +185,7 @@ export function ProveedorDetail({ proveedor }: { proveedor: Proveedor }) {
         )}
         {slides.length > 0 && (
           <div className={reel ? "lg:col-span-8" : "lg:col-span-8 lg:col-start-3"}>
-            <ProductGallery slides={slides} labels={labels.gallery} frameClassName={reel ? "aspect-[4/5] lg:aspect-[9/10]" : "aspect-[4/5] sm:aspect-[3/2]"} />
+            <ProductGallery slides={slides} labels={labels.gallery} frameClassName={reel ? "aspect-[4/5] lg:aspect-[7/6]" : "aspect-[4/5] sm:aspect-[3/2]"} />
           </div>
         )}
       </div>
