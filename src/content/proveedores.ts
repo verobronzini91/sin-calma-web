@@ -103,7 +103,7 @@ const all: Proveedor[] = [
       paraiso("fiesta-bajo-las-luces.jpg", "Invitados en mesas sobre el pasto bajo guirnaldas de luces, al anochecer"),
     ],
     // Pegar el link de YouTube en `src` y el Reel aparece solo
-    reel: { type: "youtube", src: "" },
+    reel: { type: "youtube", src: "https://youtu.be/9DZbHeGdGMk" },
     instagram: "https://www.instagram.com/elparaiso.opendoor/",
   },
 ];
