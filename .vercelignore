@@ -1,0 +1,10 @@
+# Lo mismo que .gitignore para el deploy por CLI: sin secretos, sin originales pesados ni con GPS
+.env*
+!.env.example
+node_modules
+.next
+references
+public/**/*.MOV
+public/**/*.mov
+public/**/*.HEIC
+public/**/*.heic

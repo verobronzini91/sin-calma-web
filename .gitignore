@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# originales que no se publican: videos crudos (pesados) y HEIC del celular (traen ubicación GPS)
+/public/**/*.MOV
+/public/**/*.mov
+/public/**/*.HEIC
+/public/**/*.heic
