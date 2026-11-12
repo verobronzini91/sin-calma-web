@@ -63,6 +63,23 @@ export type Proveedor = {
   email?: string;
   /** Borrador: no se publica (sólo se ve con SHOW_DRAFTS=1, para revisar en local) */
   draft?: boolean;
+  /**
+   * Datos para ordenar las recomendaciones dentro del Diario de Boda (opcionales; no se muestran en el sitio).
+   * Se publican en /api/recomendados. Completar solo con datos confirmados por el proveedor.
+   */
+  diario?: {
+    /** Zonas donde trabaja o está, además de la de `location` (ej: ["Zona norte", "Pilar"]) */
+    zones?: string[];
+    /** Capacidad de invitados (lugares, catering…) */
+    capacityMin?: number;
+    capacityMax?: number;
+    /** Nivel de precio orientativo: 1 accesible · 2 medio · 3 medio-alto · 4 alto */
+    priceLevel?: 1 | 2 | 3 | 4;
+    /** Estilos de boda (mismas opciones que Punto de partida en el Diario: "Fiesta relajada", "Boda íntima"…) */
+    styles?: string[];
+    /** Beneficio para novias del Diario (si lo hay) */
+    benefit?: string;
+  };
 };
 
 const showDrafts = process.env.SHOW_DRAFTS === "1";
